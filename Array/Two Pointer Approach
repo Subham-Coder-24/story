@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class person {
+private:
+char name[100];
+int age;
+
+public:
+
+void SetValue (char name[100], int age)
+{
+    cin.get(name,100);
+    cin >> age;
+}
+
+void GetValue (char name[100], int age)
+{
+    cout << name << endl;
+    cout << age;
+}
+
+};
+
+int main()
+{
+    char n[100];
+    int a;
+
+    person p1;
+
+    p1.SetValue(n , a);
+    p1.GetValue(n , a);
+}
